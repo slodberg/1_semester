@@ -12,25 +12,50 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <a href="forside.html">Forside</a>
-            <a href="om.html">Om Side</a>
-            <a href="tema.html">Portfolie</a>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="om.html">Om Side</a></li>
+                <li><a href="tema.html">Portfolie</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="splash"></section>
+     <!--<header>
+    <nav>
+        <div id="menuknap">☰</div>
+        <ul style="list-style-type: none" id="menu" class="hidden">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="om.html">Om Side</a></li>
+            <li><a href="tema.html">Portfolie</a></li>
+        </ul>
+    </nav>
+</header>-->
+
+    <div class="space"></div>
+
+    <section id="splash">
+        <img src="try_splash.png">
+    </section>
+
     <section id="kat_forside">
+        <h1>Temaer</h1>
         <div class="sectionwrapper">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col_forside"><img src="tema1.png"></div>
+            <div class="col_forside"><img src="ux.png"></div>
+            <div class="col_forside"><img src="tema1.png"></div>
+            <div class="col_forside"><img src="ux.png"></div>
+
+
         </div>
     </section>
 
     <script src="script.js"></script>
 
     <footer></footer>
-</body></html>
+</body>
+
+</html>
