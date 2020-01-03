@@ -17,6 +17,7 @@ header {
 
 header nav {
     margin: 1rem;
+
 }
 
 header nav a {
@@ -47,7 +48,7 @@ header nav a:hover {
     list-style-type: none;
     transition: transform .3s;
     transform-origin: top right;
-    background-color: #fae7da;
+    background-color: seashell;
 }
 
 /***************Menu slut*************/
@@ -64,11 +65,44 @@ section {
     flex-wrap: wrap;
 }
 
-.col {
+.space_forside {
+    height: 85px;
+    width: 100%
+}
+
+.space {
     height: 100px;
+    width: 100%
+}
+
+.col {
     flex-grow: 1;
-    flex-basis: 500px;
-    background-color: blue;
+    flex-basis: 600px;
+}
+
+.col_txt {
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+#kat {
+    max-width: 1200px;
+}
+
+#kat_tema1 {
+    max-width: 1200px;
+}
+
+#kat_tema2 {
+    max-width: 1200px;
+}
+
+#kat_tema3 {
+    max-width: 1200px;
+}
+
+#kat_tema4 {
+    max-width: 1200px;
 }
 
 
@@ -76,38 +110,25 @@ footer {
     background-color: gold;
     width: 100vw;
     height: 50px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0rem auto;
-}
-
-.space {
-    height: 150px;
-    width: 100%
 }
 
 /*-------------Generalle slut---------------*/
 
-/*---------------forside start-----------------*/
+/*-----------forside slut-------------------*/
 #splash {
     max-width: none;
     width: 100%;
 }
 
-#kat_forside {
-    max-width: 1000px;
-}
 
-.col_forside {
-    flex-grow: 1;
-    flex-basis: 500px;
-}
-
-/*---------------forside slut------------------*/
 
 @media only screen and (min-width:600px) {
 
     #menuknap {
         display: none;
+        background-color: seashell;
     }
 
     .hidden {
@@ -124,7 +145,6 @@ footer {
     header nav {
         padding: 0.1rem;
     }
-
 
     header nav li {
         padding: 0.3rem;
