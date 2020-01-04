@@ -1,12 +1,25 @@
 * {
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6f8da;
 }
 
 img {
     width: 100%;
 }
 
-/***************Menu*************/
+/*-----------------tekst start--------------*/
+
+h1 {}
+
+p {}
+
+/*-----------------tekst slut--------------*/
+
+/*---------------------Menu------------------------*/
 
 header {
     position: fixed;
@@ -58,6 +71,7 @@ header nav a:hover {
 section {
     max-width: 1200px;
     margin: 0rem auto;
+    background-color: seashell;
 }
 
 .sectionwrapper {
@@ -77,34 +91,20 @@ section {
 
 .col {
     flex-grow: 1;
-    flex-basis: 600px;
+    flex-basis: 500px;
 }
 
 .col_txt {
     flex-grow: 1;
-    flex-basis: 600px;
+    flex-basis: 500px;
+    padding: 20px;
 }
 
-#kat {
-    max-width: 1200px;
+.ani:hover {
+    transition: .4s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    transform: scale(1.07);
 }
-
-#kat_tema1 {
-    max-width: 1200px;
-}
-
-#kat_tema2 {
-    max-width: 1200px;
-}
-
-#kat_tema3 {
-    max-width: 1200px;
-}
-
-#kat_tema4 {
-    max-width: 1200px;
-}
-
 
 footer {
     background-color: gold;
@@ -112,6 +112,7 @@ footer {
     height: 50px;
     max-width: 1200px;
     margin: 0rem auto;
+
 }
 
 /*-------------Generalle slut---------------*/
@@ -122,6 +123,87 @@ footer {
     width: 100%;
 }
 
+/*---------------tema---------------------*/
+
+#kat .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#kat {
+    max-width: 1200px;
+    background-color: transparent;
+}
+
+#kat .col {
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#kat .col_bund {
+    padding: 5px;
+    margin: 20px;
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: aqua;
+}
+
+
+
+/*---------------tema slut----------------*/
+
+/*----------------UX start----------------*/
+#tema2 {
+
+    background-color: transparent;
+}
+
+#tema2 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#dataindsamling {
+    max-width: 800px;
+}
+
+#dataindsamling .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kopper {
+    max-width: 800px;
+    background-color: transparent;
+}
+
+#kopper .col {
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#kopper_txt {
+    max-width: 1000px;
+    background-color: transparent;
+}
+
+#kea {
+    max-width: 800px;
+    background-color: transparent;
+}
+
+#kea .col {
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+
+/*----------------UX start----------------*/
 
 
 @media only screen and (min-width:600px) {
