@@ -1,0 +1,699 @@
+/*------------Generalt------------*/
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.main_container_inside {
+    padding: 0 31px;
+    max-width: 780px;
+    margin: auto;
+}
+
+.spacing1 {
+    height: 12px;
+}
+
+.spacing2 {
+    height: 25px;
+}
+
+.spacing3 {
+    height: 37px;
+}
+
+.spacing4 {
+    height: 70px;
+}
+
+.img_wrap {
+    overflow: hidden;
+}
+
+.img {
+    transition: .4s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    transform: scale(1);
+}
+
+.img:hover {
+    transition: .4s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    transform: scale(1.07);
+}
+
+.bg_wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+}
+
+.index_height {
+    height: 400vh;
+}
+
+.betaling_height {
+    height: 400vh;
+}
+
+.enkelt_produkt_height {
+    height: 200vh;
+}
+
+.kontakt_height {
+    height: 200vh;
+}
+
+.kurv_height {
+    height: 200vh;
+}
+
+.om_os_height {
+    height: 270vh;
+}
+
+.produktoversigt_height {
+    height: 100vh;
+}
+
+.shop_height {
+    height: 350vh;
+}
+
+.bg_img {
+    background-image: url(assets/billeder/bg_strings2.svg);
+    position: absolute;
+    height: 500vh;
+    width: 200vw;
+    opacity: .1;
+    filter: blur(2px);
+    z-index: -1;
+    top: 0;
+    transform: scale(5);
+}
+
+
+
+.knap_h3 {
+    transition: .3s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    height: 44px;
+    width: 173px;
+    background-color: rgb(224, 89, 52, 1);
+    padding: 8px 14px;
+    margin: 20px 0;
+    color: #fff;
+    border-top: 1px solid #E05934;
+    border-bottom: 1px solid #E05934;
+}
+
+.knap_h3:hover {
+    background-color: rgb(224, 89, 52, 0);
+    color: #E05934;
+}
+
+/*------------Navigation------------*/
+.nav_bg {
+    background-color: rgba(222, 222, 222, 0.5);
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+
+
+header {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+nav {
+    width: 100vw;
+    padding: 0px 31px;
+    max-width: 780px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav_a {
+    transition: .2s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: trasandina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    padding: 1.5px 0 3px 0;
+    margin: .6rem 0 30px 0;
+    letter-spacing: 1px;
+    border: 0 solid #E05934;
+}
+
+.nav_a:hover {
+    transition: .2s;
+    transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+    color: #E05934;
+    border-top: 1px solid #E05934;
+    border-bottom: 1px solid #E05934;
+    margin: .55rem 0 30px 0;
+}
+
+
+nav img {
+    width: 6rem;
+    margin-top: .3rem;
+}
+
+
+
+
+/*------------Footer------------*/
+
+footer {
+    background-color: #f1f1f1;
+    height: 550px;
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.footer_inside {
+    padding: 30px 31px;
+    max-width: 780px;
+    margin: auto;
+}
+
+
+
+
+
+
+/*------------Text styles------------*/
+h1 {
+    font-size: 3rem;
+    font-family: mencken-std-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    padding: 13px 0 10px 0;
+    margin: 50px 0px 0 0px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: mencken-std-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    padding: 12px 0 8.5px 0;
+    margin: 40px 0px 0 0px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: trasandina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    padding: 0 0 0 0;
+    margin: 3px 0px 0 0px;
+    letter-spacing: 1px;
+}
+
+p,
+li,
+a {
+    font-size: 1rem;
+    font-family: trasandina, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    list-style: none;
+    color: #333;
+    padding: 0;
+    margin: 0 1px;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.img_margin {
+    margin: 0 0px;
+}
+
+a {
+    margin: 0;
+}
+
+/*------------Generalt Slut------------*/
+
+
+/*----------Splash--------------*/
+#splash .splash_img {
+    height: 55vw;
+    width: 100vw;
+    background-image: url(assets/billeder/spille_vinkel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#produkt_splash .splash_img {
+    height: 45vw;
+    width: 100vw;
+    background-image: url(assets/billeder/spille_vinkel2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#splash video {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+#splash,
+#produkt_splash {
+    height: 45vw;
+}
+
+.splash_header {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 780px;
+    border-top: 1px solid #fff;
+    font-size: 3rem;
+    letter-spacing: 4.5px;
+}
+
+.splash_wrap {
+    width: 100vw;
+    padding: 10px 31px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*----------Kategorier--------------*/
+.kat_div {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    flex-basis: 190px;
+}
+
+.kat_div p {
+    margin-top: 5px;
+}
+
+.kategori {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kat_img1 {
+    background-image: url(assets/billeder/spille_vinkel2.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.kat_img2 {
+    background-image: url(assets/billeder/guitar_rep.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.kat_img3 {
+    background-image: url(assets/billeder/guitar_remme.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.kat_img4 {
+    background-image: url(assets/billeder/spejl_i_rude.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.kat_img5 {
+    background: url(assets/billeder/guld_guitar.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.kat_img6 {
+    background: url(assets/billeder/produkt_guitar.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#produkt_kategorier {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#produkter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#produkt_kategorier .col {
+    column-count: 2;
+}
+
+#produkter .col {
+    column-count: 2;
+}
+
+.col {
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.corner_overlay {
+    width: 50px;
+    height: 25px;
+    background-color: #fff;
+    transform: translate(18px, 10px) rotate(135deg);
+}
+
+/*----------Reperation--------------*/
+.reperation_img {
+    height: 33.45vw;
+    width: 100vw;
+    background-image: url(assets/billeder/reperation.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    position: absolute;
+}
+
+#rep {
+    height: 33.45vw;
+}
+
+.rep_header {
+    color: #fff;
+    max-width: 780px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 4.6px;
+}
+
+.rep_wrap {
+    width: 100vw;
+    max-width: 780px;
+    margin: 0 auto;
+    height: 31.45vw;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 31px;
+}
+
+
+/*----------Om os--------------*/
+#om_os {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col h1,
+.col p {
+    display: block;
+}
+
+.om_os_img {
+    background-image: url(assets/billeder/spille_vinkel2.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*---------Kontakt---------*/
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col {
+    display: block;
+}
+
+.col2 {
+    display: block;
+
+
+}
+
+
+/******kurv*******/
+#indkøbskurv h1 {
+    text-align: center;
+}
+
+#kurv {
+    width: 60vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.col_kurv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.kurv_img {
+    background-image: url(assets/billeder/guld_guitar.jpg);
+    background-size: cover;
+    width: 40px;
+    height: 60px;
+    margin: 0 10px 10px 0;
+}
+
+
+.info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.antal_varer {
+    display: flex;
+}
+
+.antal varer > p {
+    margin: 0 10px;
+}
+
+.min {
+    width: 20px;
+    height: 20px;
+    background-color: #E05934;
+    opacity: .5;
+    text-align: center;
+}
+
+.pl {
+    width: 20px;
+    height: 20px;
+    background-color: #42CE99;
+    opacity: .5;
+    text-align: center;
+}
+
+
+/******produkt*******/
+.produkt {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/******enkelt produkt*******/
+#enkelt_produkt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#enkelt_produkt .kategori {
+    height: 500px;
+}
+
+#enkelt_produkt .img_wrap {
+    margin-bottom: 25px;
+}
+
+#enkelt_produkt h1 {
+    margin-top: 0;
+}
+
+.antal_produkter {
+    display: flex;
+    margin-top: 40px;
+}
+
+.antal_produkter > h3 {
+    margin: 0 15px;
+}
+
+.plus {
+    width: 32px;
+    height: 32px;
+    background-color: #E05934;
+    opacity: .5;
+    text-align: center;
+}
+
+.minus {
+    width: 32px;
+    height: 32px;
+    background-color: #42CE99;
+    opacity: .5;
+    text-align: center;
+}
+
+#enkelt_produkt .knap_h3 {
+    width: 130px;
+    margin: 20px 0px;
+}
+
+
+
+/*****mediaquery****/
+@media only screen and (min-width: 800px) {
+    #produkt_kategorier .col {
+        column-count: 4;
+    }
+
+    #produkter .col {
+        column-count: 4;
+    }
+
+    .splash_header {
+        font-size: 5rem;
+    }
+
+
+    .rep_header {
+        font-size: 2rem;
+    }
+
+    h1 {
+        margin: 100px 0px 0 0px;
+    }
+
+    .spacing1 {
+        height: 25px;
+    }
+
+    .spacing2 {
+        height: 50px;
+    }
+
+    .spacing3 {
+        height: 75px;
+    }
+
+    .spacing4 {
+        height: 100px;
+    }
+
+    .nav_bg {
+        height: 4rem;
+    }
+
+    .nav_a {
+        font-size: 1.2rem;
+        padding: 1.5px 0 0 0;
+        margin: 1rem 0px;
+    }
+
+    .nav_a:hover {
+        margin: .95rem 0px;
+    }
+
+    nav img {
+        width: 8rem;
+        margin-top: .5rem;
+    }
+
+    .rep_wrap,
+    .splash_wrap,
+    .footer_inside,
+    .main_container_inside,
+    nav {
+        padding: 0 0;
+    }
+
+    #kurv {
+        width: 30vw;
+    }
+
+    .col2 {
+        margin-left: 15px;
+    }
+
+    .h1_spacing {
+        margin-bottom: 80px;
+    }
+}
