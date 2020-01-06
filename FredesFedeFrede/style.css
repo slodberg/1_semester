@@ -1,0 +1,1211 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    width: 15rem;
+    top: 3vw;
+    left: 3vw;
+    font-size: 1.2rem;
+    font-family: marker felt;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+h2 {
+    position: absolute;
+    color: white;
+    width: 15rem;
+    top: 25vw;
+    left: 40vw;
+    font-size: 2rem;
+    font-family: marker felt;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+h1 {
+    position: absolute;
+    width: 25rem;
+    top: 2vw;
+    left: 47vw;
+    font-size: 1.2rem;
+    font-family: marker felt;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+
+/*GAME------------------------*/
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*-------GAME BACKGROUND*/
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("SVG/baggrund.svg");
+    position: absolute;
+    background-size: 100%;
+
+}
+
+#forklaring {
+    position: absolute;
+    height: 44vw;
+    width: 50vw;
+    background-image: url("SVG/forklaring.svg");
+    background-size: 100%;
+    bottom: 0;
+    left: 30vw;
+    cursor: pointer;
+}
+
+/*-------*ANIMATIONER*/
+
+.blink {
+    animation-name: blink_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes blink_kf {
+    from {
+        transform: scale(0.90);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.hide {
+    display: none;
+    pointer-events: none;
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    transform-origin: 100% 100%;
+}
+
+@keyframes fade_out_kf {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.grey {
+    filter: grayscale(100);
+}
+
+.shadow {
+    animation-name: shadow_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes shadow_kf {
+    from {
+        filter: none;
+        transform: scale(0.90)
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 100px white);
+        transform: scale(1);
+    }
+}
+
+/*-------GAME UI*/
+
+
+#score_point {
+    position: absolute;
+    background-image: url(SVG/diplom.svg);
+    height: 7vw;
+    width: 8.4vw;
+    left: 75vw;
+    top: 2vw;
+}
+
+#point_sprite {
+    position: absolute;
+    color: #F39131;
+    width: 148.5rem;
+    top: 5.6vw;
+    font-size: 3rem;
+    font-family: Marker Felt;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+#score_boede {
+    position: absolute;
+    background-image: url(SVG/hammer.svg);
+    transform: scaleX(-1);
+    height: 6vw;
+    width: 9.5vw;
+    left: 88vw;
+    top: 3vw;
+}
+
+#boede_sprite {
+    position: absolute;
+    color: #1F2532;
+    width: 11.5rem;
+    font-size: 3rem;
+    font-family: Marker Felt;
+    text-align: center;
+    font-feature-settings: tnum;
+    transform: scaleX(-1);
+}
+
+#billede_knap1 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap2 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap3 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap4 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap5 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap6 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap7 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap8 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap9 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap10 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap11 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#billede_knap12 {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    background-image: url("SVG/billedeknap.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.pos1 {
+    top: 17vw;
+    left: 28vw
+}
+
+.pos2 {
+    top: 17vw;
+    left: 61vw
+}
+
+.pos3 {
+    top: 35vw;
+    left: 28vw
+}
+
+.pos4 {
+    top: 35vw;
+    left: 61vw;
+}
+
+.pos5 {
+    top: 38vw;
+    left: 86vw;
+}
+
+/*-------*BAD*/
+
+#hvid1 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#bad_1 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/bad1.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send1 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet1 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+#hvid2 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#bad_2 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/bad2.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send2 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet2 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+/*-------*SOVE*/
+
+#hvid3 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#sove_1 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/sove1.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send3 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet3 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+#hvid4 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#sove_2 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/sove2.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send4 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet4 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+/*-------*KOEKKEN*/
+
+#hvid5 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#koekken_1 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/k%C3%B8kken1.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send5 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet5 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+#hvid6 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#koekken_2 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/k%C3%B8kken2.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send6 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet6 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+/*-------*STUE*/
+
+#hvid7 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#stue_1 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/stue1.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send7 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet7 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+
+#hvid8 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#stue_2 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/stue2.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send8 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet8 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+
+#hvid9 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#stue_3 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/stue3.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send9 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet9 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+
+#hvid10 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#stue_4 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/stue4.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send10 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+#slet10 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+#hvid11 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#stue_5 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/stue5.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send11 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet11 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+/*-------*BUSK*/
+
+#hvid12 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#busk_1 {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/busk1.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+#send12 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/send.svg");
+    bottom: 1vw;
+    left: 10vw;
+    cursor: pointer;
+}
+
+
+#slet12 {
+    position: absolute;
+    height: 5vw;
+    width: 13vw;
+    background-image: url("SVG/slet.svg");
+    bottom: 1vw;
+    left: 27vw;
+    cursor: pointer;
+}
+
+/*--------*FORKLARINGER*/
+
+#forklaringsend1 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet1 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend2 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet2 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend3 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet3 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend4 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet4 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend5 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet5 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend6 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet6 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend7 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet7 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend8 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet8 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend9 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet9 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend10 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+
+}
+
+#forklaringslet10 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringslet11 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend11 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringslet12 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+#forklaringsend12 {
+    position: absolute;
+    background-color: white;
+    height: 52vw;
+    width: 50vw;
+    left: 25vw;
+    top: 2vw;
+}
+
+.maaikke {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/maaikke.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+.maagodt {
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    background-image: url("SVG/maagodt.svg");
+    background-size: 100%;
+    top: 5vw;
+    left: 5vw;
+}
+
+
+.spilvidere {
+    position: absolute;
+    height: 7vw;
+    width: 18.7vw;
+    background-image: url("SVG/spilvidere.svg");
+    bottom: 11vw;
+    left: 7vw;
+    cursor: pointer;
+}
+
+
+/*-------*STARTSKÆRM*/
+
+#start {
+    width: 100%;
+    height: 107%;
+    top: 0;
+    left: 0;
+    background-image: url("SVG/start.svg");
+    position: absolute;
+    background-size: 100%;
+
+}
+
+#startknap {
+    transform: rotate(-20deg);
+    position: absolute;
+    background-size: 100%;
+    background-image: url("SVG/start_knap.svg");
+    top: 37vw;
+    left: 56vw;
+    cursor: pointer;
+    transform: rotate(-20deg);
+    height: 7.7vw;
+    width: 20.6vw;
+}
+
+#timer {
+    position: absolute;
+    width: 15rem;
+    top: 25vw;
+    left: 50vw;
+    font-size: 2rem;
+    font-family: marker felt;
+    color: white;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+#timer1 {
+    position: absolute;
+    width: 15rem;
+    top: 25vw;
+    left: 50vw;
+    font-size: 2rem;
+    font-family: marker felt;
+    color: white;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+#timer2 {
+    position: absolute;
+    width: 15rem;
+    top: 25vw;
+    left: 50vw;
+    font-size: 2rem;
+    font-family: marker felt;
+    color: white;
+    line-height: 2vw;
+    text-align: center;
+    font-feature-settings: tnum;
+}
+
+
+/*-------*SLUTSKÆRME*/
+
+#slut_1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(SVG/slut_daarlig.svg);
+    position: absolute;
+    background-size: 100%;
+}
+
+#slut_2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(SVG/slut_gul.svg);
+    background-size: 100%;
+}
+
+#slut_3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(SVG/slut_groen.svg);
+    background-size: 100%;
+}
+
+#genstart1 {
+    position: absolute;
+    height: 7.8vw;
+    width: 21vw;
+    left: 11vw;
+    top: 6vw;
+    background-image: url(SVG/spiligen.svg);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#genstart2 {
+    position: absolute;
+    height: 7.8vw;
+    width: 21vw;
+    left: 11vw;
+    top: 6vw;
+    background-image: url(SVG/spiligen.svg);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#genstart3 {
+    position: absolute;
+    height: 7.8vw;
+    width: 21vw;
+    left: 11vw;
+    top: 6vw;
+    background-image: url(SVG/spiligen.svg);
+    background-size: 100%;
+    cursor: pointer;
+}

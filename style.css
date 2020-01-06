@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #e6f8da;
+    background-color: #001905;
 }
 
 img {
@@ -13,9 +13,26 @@ img {
 
 /*-----------------tekst start--------------*/
 
-h1 {}
+h1 {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 4em;
+    font-weight: 150;
 
-p {}
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
 
 /*-----------------tekst slut--------------*/
 
@@ -25,19 +42,23 @@ header {
     position: fixed;
     width: 100%;
     height: 90px;
-    background-color: seashell;
+    background-color: red;
 }
 
 header nav {
     margin: 1rem;
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
 
 }
 
 header nav a {
     text-decoration: none;
     font-family: 'Anton', sans-serif;
-    color: #403f3f;
-    font-size: 1.2rem;
+    color: #000000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 /* mouse over link */
@@ -61,7 +82,7 @@ header nav a:hover {
     list-style-type: none;
     transition: transform .3s;
     transform-origin: top right;
-    background-color: seashell;
+    background-color: red;
 }
 
 /***************Menu slut*************/
@@ -71,12 +92,14 @@ header nav a:hover {
 section {
     max-width: 1200px;
     margin: 0rem auto;
-    background-color: seashell;
+    background-color: #FFD400;
+    padding: 20px;
 }
 
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    /*background-color: #FFD400;*/
 }
 
 .space_forside {
@@ -92,6 +115,7 @@ section {
 .col {
     flex-grow: 1;
     flex-basis: 500px;
+    width: 800px;
 }
 
 .col_txt {
@@ -99,6 +123,7 @@ section {
     flex-basis: 500px;
     padding: 20px;
 }
+
 
 .ani:hover {
     transition: .4s;
@@ -111,6 +136,11 @@ iframe {
     height: 47vw;
     border: 0;
 }
+
+/*.ui {
+    height: 50%;
+    width: 50%
+}*/
 
 footer {
     background-color: gold;
@@ -134,36 +164,62 @@ footer {
 #kat .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 #kat {
     max-width: 1200px;
-    background-color: transparent;
+
 }
 
 #kat .col {
     padding: 20px;
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 150px;
 }
 
-#kat .col_bund {
-    padding: 5px;
-    margin: 20px;
-    flex-grow: 1;
-    flex-basis: 200px;
-    background-color: aqua;
+/*#kat .col img {
+    width: 60%
+}*/
+
+#controle {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
 }
-
-
 
 /*---------------tema slut----------------*/
 
+/*------------grundlæggende html start-----------*/
+
+#kat_tema1 {}
+
+#kat_tema1 .col_txt {
+    padding: 30px;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+#kat_tema1 .col {
+    padding: 50px;
+
+}
+
+/*------------grundlæggende html slut-----------*/
+
+
+
 /*----------------UX start----------------*/
+/*
 #tema2 {
 
     background-color: transparent;
+}
+*/
+
+#farve {
+    background-color: gold;
+    max-width: 1200px;
 }
 
 #tema2 .sectionwrapper {
@@ -173,19 +229,20 @@ footer {
 }
 
 #dataindsamling {
-    max-width: 800px;
-    background-color: transparent;
+    max-width: 1200px;
+    /*background-color: transparent;*/
 }
 
-/*#dataindsamling .col {
-    flex-grow: 1;
+#dataindsamling .col {
+    flex-grow: 2;
     flex-basis: 400px;
-    padding: 15px;
-}*/
+}
+
+/*---------kopper---------------*/
 
 #kopper {
     max-width: 800px;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
 #kopper .sectionwrapper {
@@ -193,19 +250,22 @@ footer {
 }
 
 #kopper .col {
-    padding: 20px;
+    /*display: flex;*/
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
+    width: 50%;
+    padding: 20px;
 }
 
 #kopper_txt {
     max-width: 1000px;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
+/*---------------------sprint------------*/
 #kea {
     max-width: 800px;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
 #kea .sectionwrapper {
@@ -216,16 +276,128 @@ footer {
     padding: 20px;
     flex-grow: 1;
     flex-basis: 200px;
+    width: 50%;
 }
 
-/*#dsign_sprint{
+#kea_txt {
+    max-width: 1200px;
+    padding: 15px;
+    /*background-color: transparent;*/
+}
 
+#kea_txt .col_txt {
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kea_txt .col {
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+
+
+
+/*----------------UX slut----------------*/
+
+/*------------animation start-----------*/
+#kat_tema3 .sectionwrapper {
+    height: 90px;
+}
+
+
+#kat_tema3 .col_txt {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#det_sorte_hul {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+}
+
+#det_sorte_hul .sectionwrapper {
+    height: 300px;
+}
+
+#det_sorte_hul h1 {
+    padding-bottom: 30px;
+}
+
+#det_sorte_hul iframe {
+    width: 50%;
+    height: 30vw;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#fest {
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+/*#fest .sectionwrapper {
+    height: 300px;
 }*/
 
+#fest h1 {
+    padding-bottom: 30px;
+}
 
+#fest iframe {
+    width: 37vw;
+    height: 18.7vw;
+    padding-right: 30px;
+    padding-left: 30px;
 
-/*----------------UX start----------------*/
+}
 
+/*------------animation slut-----------*/
+
+/*------------grundlæggende indhold start------------*/
+#kat_tema4 .col_txt {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#kat_tema4 iframe {
+    width: 50%;
+    height: 30vw;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#kat_tema4 h1 {
+    padding-bottom: 30px;
+}
+
+#redesign {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+}
+
+#redesign h1 {
+    padding-bottom: 30px;
+}
+
+#redesign .col img {
+
+    padding: 70px;
+}
+
+/*#video iframe {
+    width: 50%;
+    height: 30vw;
+    padding-right: 30px;
+    padding-left: 30px;
+}*/
+
+/*------------grundlæggende indhold slut------------*/
 
 @media only screen and (min-width:600px) {
 

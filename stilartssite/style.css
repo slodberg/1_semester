@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+
+    background-color: #6297c2;
+}
+
+img {
+    width: 100%;
+}
+
+/***************Menu*************/
+
+/* unvisited link */
+header nav a:link {
+    color: #fae157;
+    text-shadow: 0px 1px black;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #fae157;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #73b494;
+}
+
+/* selected link */
+header nav a:active {
+    color: #fae157;
+}
+
+header {
+    position: fixed;
+    background-image: linear-gradient(black, rgba(98, 151, 194, 0));
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Monda', sans-serif;
+    font-size: 1.2rem;
+    /*    margin-right: 0.5rem;*/
+    padding: 0.5rem;
+
+}
+
+/***************Menu slut*************/
+
+section {
+    background-color: #6297c2;
+    max-width: 1200px;
+    margin: 0rem auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/*****splash***/
+
+#splash {
+    max-width: none;
+    width: 100%;
+    height: 100vh;
+    background-image: url(billeder/splashbillede_com.jpg);
+    background-size: cover;
+    background-position: 75% 60%;
+}
+
+/**********om**********/
+#om .sectionwrapper {
+    /*    padding: 1rem;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .col {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/**********om slut**********/
+
+/**********eksempler**********/
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .col {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/**********eksempler slut**********/
+
+/************* Typografi **********/
+
+#typografi .sectionwrapper {
+    /*    padding: 1rem;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .col_wide {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 2;
+    flex-basis: 300px;
+    flex-direction: column;
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .top image,
+.txt {
+    padding: 0.5rem;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#typografi .sectionwrapper .image {
+    padding: 0.3rem;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .col_narrow {
+    padding: 0.5rem;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/************* Typografi slut**********/
+
+/*****komposition og farve****/
+
+#komposition_farve .sectionwrapper {
+    /*    padding: 1rem;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#komposition_farve .col_wide {
+    /*    padding: 1rem;*/
+    display: flex;
+    flex-grow: 3;
+    flex-basis: 600px;
+    flex-wrap: nowrap;
+}
+
+#komposition_farve .colors {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+#komposition_farve .content {
+    flex-grow: 3;
+    flex-basis: 400px;
+}
+
+#komposition_farve .col_narrow {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+/**********links********/
+#links .sectionwrapper {
+    padding: 1rem;
+    padding-top: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#links .col {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/********ekstra***/
+#ekstra .sectionwrapper {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ekstra .col {
+    padding: 0.5rem;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+
+#footer {
+    font-family: 'Monda', sans-serif;
+    color: #fae157;
+    text-shadow: 0px 1px black;
+    font-size: 1rem;
+    background-color: #73b494;
+    padding: 1rem;
+}
+
+/*******styletile*****/
+
+#styletile h1 {
+    padding: 0rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 2.5rem;
+    text-transform: none;
+    color: #f0cf1c;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    text-shadow: 0px 1px black;
+}
+
+h2 {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #402e2e;
+    text-shadow: 0px 1px #b1b1b1;
+}
+
+h3 {
+    font-family: 'Monda', sans-serif;
+    font-size: 1.2rem;
+    color: #552a2a;
+    line-height: 1.5;
+}
+
+.forklaring {
+    font-family: 'Monda', sans-serif;
+    font-size: 0.7rem;
+    color: #4b4a4a;
+}
+
+.broedtekst {
+    font-family: 'Monda', sans-serif;
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Monda', sans-serif;
+    font-size: 1rem;
+    color: #413b3b;
+    padding-bottom: 0.5rem;
+}
+
+
+a:link {
+    font-family: 'Monda', sans-serif;
+    text-decoration: none;
+    color: #fae157;
+}
+
+a:visited {
+    color: #fae157;
+}
+
+a:hover {
+    color: #008644;
+}
+
+a:active {
+    color: #fae157;
+}
+
+.colors div {
+    border: solid thin #434350;
+    height: 100px;
+    width: 100px;
+}
+
+.farve_1 {
+    background-color: #e22625;
+
+}
+
+.farve_2 {
+    background-color: #f78022;
+
+}
+
+.farve_3 {
+    background-color: #fae157;
+
+}
+
+.farve_4 {
+    background-color: #3d5daa;
+
+}
+
+.farve_5 {
+    background-color: #73b494;
+
+}
+
+.farve_6 {
+    background-color: #cbd2d8;
+
+}
+
+.image {
+    width: 20vw;
+}
+
+/*****styletile slut*******/
+
+@media only screen and (orientation:portrait) and (min-width: 600px) {
+
+    #splash {
+        width: 100%;
+        height: 56.25vw;
+    }
+}
+
+@media only screen and (min-width:800px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0rem;
+        /*      padding: 0.5rem;*/
+    }
+
+    header nav a {
+        border-right: 2px solid #fae157;
+        padding: 0 0.5rem;
+    }
+
+    header nav a:last-child {
+        border: none;
+        padding: 0 0.5rem;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    #eksempler .col {
+        flex-basis: 200px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
