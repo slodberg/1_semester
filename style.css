@@ -17,21 +17,35 @@ h1 {
     display: flex;
     font-family: 'Anton', sans-serif;
     text-decoration: none;
-    color: black;
+    color: red;
     letter-spacing: 3px;
     text-transform: uppercase;
     justify-content: center;
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 0px;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 150;
+    border-bottom: solid red;
+    /* text-shadow: 3.5px 0px #001905;*/
+}
 
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+    font-weight: 150;
+    padding: 10px;
+    padding-left: 0;
+    color: red;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     color: black;
+    font-size: 1em;
+    text-align: left;
+    line-height: 23px;
+    font-weight: 300;
 }
 
 /*-----------------tekst slut--------------*/
@@ -42,7 +56,8 @@ header {
     position: fixed;
     width: 100%;
     height: 90px;
-    background-color: red;
+    background-color: #001905;
+
 }
 
 header nav {
@@ -56,14 +71,14 @@ header nav {
 header nav a {
     text-decoration: none;
     font-family: 'Anton', sans-serif;
-    color: #000000;
+    color: red;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 /* mouse over link */
 header nav a:hover {
-    color: #000000;
+    color: #FFE600;
 }
 
 /*--------------burgermenu-------------*/
@@ -82,7 +97,7 @@ header nav a:hover {
     list-style-type: none;
     transition: transform .3s;
     transform-origin: top right;
-    background-color: red;
+    background-color: #001905;
 }
 
 /***************Menu slut*************/
@@ -92,8 +107,8 @@ header nav a:hover {
 section {
     max-width: 1200px;
     margin: 0rem auto;
-    background-color: #FFD400;
-    padding: 20px;
+    background-color: #FFE600;
+    padding: 5px;
 }
 
 .sectionwrapper {
@@ -131,6 +146,30 @@ section {
     transform: scale(1.07);
 }
 
+.puls {
+    animation-name: pil_kf;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pil_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+#farve {
+    background-color: #FFE600;
+    max-width: 1200px;
+}
+
 iframe {
     width: 100%;
     height: 47vw;
@@ -143,12 +182,17 @@ iframe {
 }*/
 
 footer {
-    background-color: gold;
+    background-color: #001905;
     width: 100vw;
-    height: 50px;
     max-width: 1200px;
     margin: 0rem auto;
+}
 
+footer p {
+    padding: 20px;
+    font-weight: 500;
+    color: red;
+    font-family: 'Anton', sans-serif;
 }
 
 /*-------------Generalle slut---------------*/
@@ -157,7 +201,15 @@ footer {
 #splash {
     max-width: none;
     width: 100%;
+    /*position: fixed;*/
 }
+
+/*_______________om--------------------*/
+#om .col {
+    padding: 40px;
+}
+
+
 
 /*---------------tema---------------------*/
 
@@ -217,10 +269,7 @@ footer {
 }
 */
 
-#farve {
-    background-color: gold;
-    max-width: 1200px;
-}
+
 
 #tema2 .sectionwrapper {
     display: flex;
@@ -310,50 +359,68 @@ footer {
 
 #kat_tema3 .col_txt {
     padding-left: 60px;
-    padding-right: 60px;
+    /*padding-right: 60px;*/
 }
 
 #det_sorte_hul {
-    padding-left: 50px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 40px;
     padding-bottom: 0px;
 }
 
 #det_sorte_hul .sectionwrapper {
+    padding-top: 40px;
     height: 300px;
 }
 
-#det_sorte_hul h1 {
-    padding-bottom: 30px;
+
+#det_sorte_hul img {
+    padding-right: 10px;
 }
 
-#det_sorte_hul iframe {
-    width: 50%;
-    height: 30vw;
-    padding-right: 30px;
-    padding-left: 30px;
+
+
+/*#det_sorte_hul .sectionwrapper {
+    height: 300px;
+}*/
+
+#det_sorte_hul h1 {
+    padding-bottom: 20px;
+}
+
+#sort_spil iframe {
+    padding: 100px;
+    /*width: 70%;*/
+    /*height: 30vw;*/
+    /* padding-right: 30px;*/
+    /*padding-left: 50px;*/
+}
+
+#styletile_det_sorte_hul {
+    background-color: transparent;
+    border: 0;
 }
 
 #fest {
     padding-top: 0px;
     padding-left: 50px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
-/*#fest .sectionwrapper {
-    height: 300px;
-}*/
+#fest .sectionwrapper {
+    padding-top: 40px;
+}
 
 #fest h1 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
-#fest iframe {
-    width: 37vw;
-    height: 18.7vw;
-    padding-right: 30px;
-    padding-left: 30px;
-
+#frede iframe {
+    padding: 100px;
+    /*width: 70%;*/
+    height: 49.2vw;
+    /* padding-right: 30px;*/
+    /*padding-left: 50px;*/
 }
 
 /*------------animation slut-----------*/
