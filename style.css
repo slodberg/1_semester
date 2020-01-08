@@ -53,11 +53,9 @@ p {
 /*---------------------Menu------------------------*/
 
 header {
-    position: fixed;
     width: 100%;
     height: 90px;
     background-color: #001905;
-
 }
 
 header nav {
@@ -65,7 +63,6 @@ header nav {
     align-items: flex-end;
     flex-direction: column;
     display: flex;
-
 }
 
 header nav a {
@@ -89,15 +86,18 @@ header nav a:hover {
 
 #menuknap {
     display: inline-block;
-    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 1rem;
+    color: red;
+    font-size: 2em;
+    font-family: 'Anton', sans-serif;
 }
 
 #menu {
     list-style-type: none;
-    transition: transform .3s;
-    transform-origin: top right;
-    background-color: #001905;
+    /*transition: transform .3s;*/
+    /*transform-origin: top left;*/
+
 }
 
 /***************Menu slut*************/
@@ -122,15 +122,15 @@ section {
     width: 100%
 }
 
-.space {
+/*.space {
     height: 100px;
     width: 100%
-}
+}*/
 
 .col {
     flex-grow: 1;
     flex-basis: 500px;
-    width: 800px;
+    /*width: 800px;*/
 }
 
 .col_txt {
@@ -148,11 +148,17 @@ section {
 
 .puls {
     animation-name: pil_kf;
-    animation-duration: .7s;
+    animation-duration: .8s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     animation-direction: alternate-reverse;
+}
+
+.knap {
+    flex-basis: 400px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 @keyframes pil_kf {
@@ -161,7 +167,7 @@ section {
     }
 
     100% {
-        transform: scale(0.95);
+        transform: scale(0.98);
     }
 }
 
@@ -201,7 +207,15 @@ footer p {
 #splash {
     max-width: none;
     width: 100%;
-    /*position: fixed;*/
+    height: 30vw;
+    background-color: #001905;
+}
+
+.billede {
+    width: 40%;
+    margin: auto;
+    align-items: flex-end;
+
 }
 
 /*_______________om--------------------*/
@@ -227,18 +241,10 @@ footer p {
 #kat .col {
     padding: 20px;
     flex-grow: 1;
-    flex-basis: 150px;
+    flex-basis: 200px;
 }
 
-/*#kat .col img {
-    width: 60%
-}*/
 
-#controle {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-}
 
 /*---------------tema slut----------------*/
 
@@ -262,24 +268,17 @@ footer p {
 
 
 /*----------------UX start----------------*/
-/*
 #tema2 {
-
-    background-color: transparent;
+    max-width: 1000px;
 }
-*/
-
-
 
 #tema2 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
 }
 
 #dataindsamling {
     max-width: 1200px;
-    /*background-color: transparent;*/
 }
 
 #dataindsamling .col {
@@ -329,38 +328,13 @@ footer p {
 }
 
 #kea_txt {
-    max-width: 1200px;
-    padding: 15px;
-    /*background-color: transparent;*/
+    max-width: 1000px;
+    padding: 10px;
 }
-
-#kea_txt .col_txt {
-    padding: 20px;
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-#kea_txt .col {
-    padding: 20px;
-    flex-grow: 1;
-    flex-basis: 200px;
-
-}
-
-
 
 /*----------------UX slut----------------*/
 
 /*------------animation start-----------*/
-#kat_tema3 .sectionwrapper {
-    height: 90px;
-}
-
-
-#kat_tema3 .col_txt {
-    padding-left: 60px;
-    /*padding-right: 60px;*/
-}
 
 #det_sorte_hul {
     padding-left: 80px;
@@ -369,8 +343,7 @@ footer p {
 }
 
 #det_sorte_hul .sectionwrapper {
-    padding-top: 40px;
-    height: 300px;
+    padding-top: 20px;
 }
 
 
@@ -379,21 +352,14 @@ footer p {
 }
 
 
-
-/*#det_sorte_hul .sectionwrapper {
-    height: 300px;
-}*/
-
 #det_sorte_hul h1 {
     padding-bottom: 20px;
 }
 
 #sort_spil iframe {
+    height: 50vw;
     padding: 100px;
-    /*width: 70%;*/
-    /*height: 30vw;*/
-    /* padding-right: 30px;*/
-    /*padding-left: 50px;*/
+
 }
 
 #styletile_det_sorte_hul {
@@ -403,17 +369,15 @@ footer p {
 
 #fest {
     padding-top: 0px;
-    padding-left: 50px;
+    padding-left: 80px;
     padding-right: 50px;
+    padding-bottom: 0;
 }
 
 #fest .sectionwrapper {
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
-#fest h1 {
-    padding-bottom: 20px;
-}
 
 #frede iframe {
     padding: 100px;
@@ -457,20 +421,12 @@ footer p {
     padding: 70px;
 }
 
-/*#video iframe {
-    width: 50%;
-    height: 30vw;
-    padding-right: 30px;
-    padding-left: 30px;
-}*/
-
 /*------------grundlæggende indhold slut------------*/
 
 @media only screen and (min-width:600px) {
 
     #menuknap {
         display: none;
-        background-color: seashell;
     }
 
     .hidden {
@@ -493,3 +449,5 @@ footer p {
         margin: 0.8rem;
         color: black;
     }
+
+}
